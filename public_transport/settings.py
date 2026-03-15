@@ -28,6 +28,9 @@ INSTALLED_APPS = [
     'public_transport.accounts',
 ]
 
+# Use the custom user model from the accounts app.
+AUTH_USER_MODEL = 'accounts.UserProfiles'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
